@@ -1,0 +1,159 @@
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Smart Documentaries - Excel Parsing Data List</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.1-master-a687bfc/angular-material.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.amber-pink.min.css">
+	<link rel="stylesheet" href="css/excelparsing.css" />
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	
+</head>
+
+<body ng-app="myApp" ng-controller="myAppController as ctrl" ng-cloak>
+<div layout="column" layout-fill>
+
+  <md-toolbar layout="row"  class="">
+	 <span class="fontStyling" style="font-size: 34px;line-height: 40px;padding-left:20px;padding-top:10px;">Smart Documentaries</span>
+	               <md-menu-bar class="marginTop30">
+                     <md-menu>
+                        <button class="fontStyling mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent customColor" ng-click = "$mdOpenMenu()"><a href="./dashboard.html" style="text-decoration:none;">Dash Board</a></button>
+                       
+                     </md-menu>
+					 <md-menu>
+                        <button class="fontStyling mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent customColor" ng-click = "$mdOpenMenu()"><a href="./viewvideoslist.html" style="text-decoration:none;">View Videos</a></button>
+                        <md-menu-content>
+                           
+                           <md-menu-item>
+                              <md-button ng-click = "ctrl.sampleAction('share', $event)">Work In Progress</md-button>
+                           </md-menu-item>
+						     <md-menu-item>
+                              <md-button ng-click = "ctrl.sampleAction('share', $event)">Published</md-button>
+                           </md-menu-item>
+                           
+                           </md-menu-content>
+                     </md-menu>
+					 <md-menu>
+                        <button class="fontStyling mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent customColor" ng-click = "$mdOpenMenu()"><a href="./excelparsing.html" style="text-decoration:none;">Excel Parsing</a></button>
+                           <md-menu-content>
+                           
+                           <md-menu-item>
+                              <md-button ng-click = "ctrl.sampleAction('share', $event)">Manual Upload</md-button>
+                           </md-menu-item>
+						     <md-menu-item>
+                              <md-button ng-click = "ctrl.sampleAction('share', $event)">Data Link</md-button>
+                           </md-menu-item>
+                           
+                           </md-menu-content>
+                     </md-menu>
+					 <md-menu>
+                        <button class="fontStyling mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent customColor" ng-click = "$mdOpenMenu()">Pending Videos</button>
+                        
+                     </md-menu>
+					 <md-menu>
+                        <button class="fontStyling mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent customColor" ng-click = "$mdOpenMenu()">Sign Out</button>
+                        
+                     </md-menu>
+                  </md-menu-bar>
+				  </md-toolbar>
+				    <div layout = "row" layout-xs = "column" layout-align="center">
+            <div flex-gt-md="30" flex-md="80" flex-xs="100" class = "green box">  <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Last Edited Video</span>
+            <span class="md-subhead"><span>Dark side of the moon</span></span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+		 <md-card-title-media>
+          <div class="md-media-xl card-media"></div>
+ </md-card-title-media>
+        
+        </md-card-content>
+      </md-card>
+				</div>
+				  
+				 
+	  
+	  
+            <div flex-gt-md="30" flex-md="80" flex-xs="100"class = "blue box">  <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Pending Video</span>
+            <span class="md-subhead"><span>20</span></span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout="row" layout-align="space-between">
+          <div class="md-media-xl card-media"></div>
+        </md-card-content>
+      </md-card></div>
+         </div>
+				
+				  
+				  
+				  <md-content layout-padding="" layout="row" layout-align="center" class="layout-padding layout-align-center-stretch layout-row">
+				  <div flex-gt-md="60" flex-md="80" flex-xs="100" class="flex-xs-100 flex-md-80 flex-gt-md-60">
+    <div grid-data id='test' grid-options="gridOptions" grid-actions="gridActions" layout-align="center">
+
+                    <table class="table_dash mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                        <thead>
+                        <tr>
+                            <th class=" mdl-data-table__cell--non-numeric">
+                                <span>Category Name</span>
+                            </th>
+
+                            <th class="">
+                                <span>No of Videos</span>
+                            </th>
+                            <th class="">
+                                <span>No of Views</span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+<td>Mystery
+
+            </td><td>
+2
+            </td><td>
+53
+            </td>
+                          
+                        </tr>
+						 <tr >
+<td>Comedy
+
+            </td><td>
+14
+            </td>
+                   <td>
+204
+            </td>
+                   
+                          
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+				</md-content>
+            </div>
+</div>
+</body>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<script src="https://angular-data-grid.github.io/dist/pagination.js"></script>
+<script src="https://angular-data-grid.github.io/dist/dataGrid.js"></script>
+<script src="js/excelparsing.js"></script>
+ 
+
+</html>

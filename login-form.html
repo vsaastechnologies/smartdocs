@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Documentaries Login</title>
+    <!-- Adding CSS for Alignment -->
+    <link rel="stylesheet" href="css/login-form.css">
+    <!-- Adding Material Desgin CSS file -->
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.css" media="all" rel="stylesheet" type="text/css">
+    <!-- Adding Material Desgin JS file -->
+    <script src="js/material.min.js"></script>
+    <!-- Adding Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div class="mdl-layout mdl-layout--fixed-header mdl-js-layout  mdl-color--white-100">
+		<main class="mdl-layout__content main_content">
+		    <h3><strong style="color:rgb(255,87,34);">Smart Documentaries Login</strong></h3>
+			<div class="login-form-div mdl-grid mdl-shadow--2dp">
+				<div class="mdl-cell mdl-cell--12-col cell_con">
+					<i class="material-icons">person</i>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="sample2">
+						<label class="mdl-textfield__label" for="sample2">Enter valid Email</label>
+						<span class="mdl-textfield__error">Invalid Email...!</span>
+			        </div>
+				</div>				
+				<div class="mdl-cell mdl-cell--12-col cell_con">
+					<i class="material-icons">lock</i>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" id="sample2">
+						<label class="mdl-textfield__label" for="sample2">Enter Password</label>
+			        </div>
+				</div>				
+				<div class="mdl-cell cell_con">
+					<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+						<input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+						<span class="mdl-checkbox__label">Remember Me</span>
+				    </label>
+				</div>
+				<div class="mdl-cell mdl-cell--12-col  login-btn-con">
+					<a href="dashboard.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary btn">Login</button></a>
+				</div>
+				<!--<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet links">
+					<a class="mdl-button--primary">Register now !</a>
+				</div>-->
+				<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet links">
+					<a class="mdl-button--primary">Forgot password ?</a>
+				</div>		
+			</div>
+	    </main>
+    </div>	
+</body>
+</html>

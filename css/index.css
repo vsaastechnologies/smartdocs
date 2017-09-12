@@ -1,0 +1,29 @@
+  body { background:#fff; }
+	[class*="col-"] > section {
+		background:#f1f1f1;
+	}
+	.content-section { padding:2.5em 2em 1.5em; }
+	.tab-content { padding:1em;  border-top: none; height:395px;  }
+	.tab-content .form-control { margin-bottom:15px; height:40px; border-radius:25px; }
+	.signin-tabs li { float:none; margin:0 auto; display: inline-block; }
+	.signin-tabs li a { font-size:18px; background:transparent; color:#bbb; font-weight:600; text-transform:uppercase; padding:15px 22px; border: none; margin-right:0;}
+	.signin-tabs li.active a, .signin-tabs li.active a:hover, .signin-tabs li.active a:focus { border:none; color:#3774c4; background:transparent; }
+	.signin-tabs li a:hover { background:transparent; border:none; color:#3774c4;  }
+	.signin-tabs li a:after{ content:""; display:block; height:2px; background:#3774c4; padding: 0 35px; width:0px; margin-left:-100px; opacity:0;  }
+	.signin-tabs li.active a:after{ content:""; display:block; height:2px; background:#3774c4; padding: 0 35px; width:70px; transition:0.3s; opacity:1; margin-left:0; }
+	.nav-tabs { border:none; }
+	.loginBanner:before { content:""; width:100%; display:block; /*background: rgba(255, 255, 255, 0.5) url(images/banner1.jpg) no-repeat;*/ height:450px; opacity: 0.4; position:relative; background-size:cover; }
+	.loginBanner div { position:absolute; text-align:center; top: 130px; text-shadow:1px 1px 3px #fff;}
+	.loginBanner div h1 { line-height:45px;}
+	.loginBanner div a { background:#333; color: #fff; margin-top:20px; }
+	.login-content { padding:15px 0; border-top:solid 1px #ddd; margin-top:20px; }
+	.loginBtn { height:auto; color: #fff; padding:12px 50px; background:#3774c4; font-size:16px; border:none; border: solid 1px #bb6c38; border-radius: 30px; outline:none; text-shadow: 1px 1px 3px #824218; }
+	.curce-box div { background:#f6f6f6; border:solid 1px #e2e2e2; padding:30px 15px; margin-top:30px; }
+	.curce-box div i { font-size:40px; color:#999;}
+	.form-control { padding:22px 18px; }
+	.modal-dialog { top:20%; }
+	.modal-dialog .modal-footer button { background:#ddd; }
+	.modal-content { box-shadow: none; border-radius:0; }
+	.modal-dialog .modal-body { padding:2em 3em; }
+	 
+  
